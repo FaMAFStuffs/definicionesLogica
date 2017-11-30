@@ -1,0 +1,19 @@
+\section{Fórmulas}
+
+\PN \textbf{FÓRMULAS DE TIPO $\tau$:}
+	\begin{eqnarray*}
+		F_{0}^{\tau} &=& \{(t \equiv s): t, s \in T^{\tau}\} \cup \{r(t_{1}, \dotsc, t_{n}): r \in \mathcal{R}_{n}, n \geq
+			1, t_{1}, \dotsc, t_{n} \in T^{\tau}\} \\
+		F_{k+1}^{\tau} &=& F_{k}^{\tau} \cup \{\lnot \varphi: \varphi \in F_{k}^{\tau}\} \cup \{(\varphi \vee \psi):
+			\varphi, \psi \in F_{k}^{\tau}\} \cup \{(\varphi \wedge \psi): \varphi, \psi \in F_{k}^{\tau}\} \cup \\
+		&& \{(\varphi \rightarrow \psi): \varphi, \psi \in F_{k}^{\tau}\} \cup \{(\varphi \leftrightarrow \psi): \varphi,
+			\psi \in F_{k}^{\tau}\} \cup \{\forall v \varphi: \varphi \in F_{k}^{\tau}, v \in Var\} \cup \\
+		&& \{\exists v\varphi :\varphi \in F_{k}^{\tau}, v \in Var\} \\
+		\\
+		F^{\tau} &=& \bigcup_{k \geq  0} F_{k}^{\tau}
+	\end{eqnarray*}
+
+	\vspace{3mm}
+	\PN \textbf{SUBFORMULAS:}
+  \PN Una fórmula $\varphi$ será llamada \textbf{subfórmula} (propia) de una fórmula $\psi$, cuando $\varphi$ sea no
+  igual a $\psi$ y tenga alguna ocurrencia en $\psi$.

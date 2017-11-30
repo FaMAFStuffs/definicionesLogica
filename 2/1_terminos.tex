@@ -1,0 +1,42 @@
+\section{Términos}
+	\PN \textbf{TIPO:} Por un \textbf{tipo} (de primer orden), entenderemos una 4-upla $\tau = (\mathcal{C}, \mathcal{F},
+	\mathcal{R}, a)$, donde a los elementos de $\mathcal{C}, \mathcal{F}, \mathcal{R}$ les llamaremos \textit{nombres de
+	constante}, \textit{nombres de función} y \textit{nombres de relación} respectivamente, tal que:
+	\begin{enumerate}[(1)]
+		\item Hay alfabetos finitos $\Sigma_{1}, \Sigma_{2}$ y $\Sigma_{3}$ tales:
+			\begin{enumerate}
+				\item $\mathcal{C} \subseteq \Sigma_{1}^{+}, \mathcal{F} \subseteq \Sigma_{2}^{+}$ y $\mathcal{R} \subseteq
+					\Sigma_{3}^{+}$
+				\item $\Sigma_{1}, \Sigma_{2}$ y $\Sigma_{3}$ son disjuntos de a pares.
+				\item $\Sigma_{1} \cup \Sigma_{2} \cup \Sigma_{3}$ no contiene ningún símbolo de la lista
+					\[
+						\forall \ \exists \ \lnot \ \vee \ \wedge \ \rightarrow \ \leftrightarrow \ (\ )\ , \ \equiv \mathsf{X} \
+						\mathit{0} \ \mathit{1} \ \dotsc \ \mathit{9} \ \mathbf{0} \ \mathbf{1} \ \dotsc \ \mathbf{9}
+					\]
+			\end{enumerate}
+
+		\item $a: \mathcal{F} \cup \mathcal{R} \rightarrow \mathbb{N}$ es una función que a cada $p \in \mathcal{F} \cup
+		\mathcal{R}$ le asocia un número natural $a(p)$, llamado la aridad de $p$. Dado $n \geq 1$, definimos:
+			\begin{eqnarray*}
+				\mathcal{F}_{n} = \{f \in \mathcal{F}: a(f) = n\} \\
+				\mathcal{R}_{n} = \{r \in \mathcal{R}: a(r) = n\}
+			\end{eqnarray*}
+
+		\item Ninguna palabra de $\mathcal{C}$ (resp. $\mathcal{F}$, $\mathcal{R }$) es subpalabra propia de otra palabra de
+		$\mathcal{C}$ (resp. $\mathcal{F} $, $\mathcal{R}$).
+	\end{enumerate}
+
+	\vspace{3mm}
+	\PN \textbf{TÉRMINOS DE TIPO $\tau$:}
+	\begin{eqnarray*}
+		T_{0}^{\tau} &=& Var \cup \mathcal{C} \\
+		T_{k+1}^{\tau} &=& T_{k}^{\tau} \cup \{f(t_{1}, \dotsc, t_{n}): f \in \mathcal{F}_{n},n\geq 1,t_{1}, \dotsc, t_{n}
+			\in T_{k}^{\tau }\} \\
+		\\
+		T^{\tau} &=& \bigcup_{k \geq  0} T_{k}^{\tau}
+	\end{eqnarray*}
+
+	\vspace{3mm}
+	\PN \textbf{SUBTERMINOS:}
+	\PN Sean $s, t \in T^{\tau}$, diremos que s es \textbf{subtérmino} (propio) de $t$, si no es igual a $t$ y y es
+	subpalabra de $t$.
