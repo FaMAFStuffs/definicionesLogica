@@ -18,11 +18,20 @@
   \end{enumerate}
 
   \vspace{3mm}
-  \PN \textbf{SUBRETICULADO COMPLEMENTADO:} Sea $(L, \SU, \IN, ^{c}, 0, 1)$ un reticulado complementado. $S \neq
-  \emptyset \subseteq L$ será llamado \textbf{subuniverso} de $(L, \SU, \IN, ^{c}, 0, 1)$ si $0, 1 \in S$ y es cerrado
-  bajo las operaciones $\SU$, $\IN$ y $^{c}$. Diremos que el reticulado complementado
-  $(S, \SU\mathrm{\mid}_{S \times S}, \IN\mathrm{\mid}_{S \times S}, ^{c}\mathrm{\mid}_{S \times S}, 0, 1)$ es
-  \textbf{subreticulado complementado} de $(L, \SU, \IN, ^{c}, 0, 1)$.
+  \PN \textbf{SUBRETICULADO COMPLEMENTADO:} Dado $(L, \SU, \IN, ^{c}, 0, 1)$ reticulado complementado, diremos que
+  $(L^{\prime}, \SU^{\prime}, \IN^{\prime}), ^{c^{\prime}}, 0^{\prime}, 1^{\prime}$ es \textbf{subreticulado
+  complementado} de $(L, \SU, \IN, ^{c}, 0, 1)$ si:
+  \begin{itemize}
+    \item $L \subseteq L^{\prime}$
+    \item $0 = 0^{\prime}$ y $1 = 1^{\prime}$
+    \item $\SU = \SU^{\prime}\mathrm{\mid}_{L \times L}$, $\IN = \IN^{\prime}\mathrm{\mid}_{L \times L}$ y
+      $^{c} = ^{c^{\prime}}\mathrm{\mid}_{L}$
+  \end{itemize}.
+
+  \PN Un conjunto $\emptyset \neq S \subseteq L$ será llamado \textbf{subuniverso} de $(L, \SU, \IN, ^{c}, 0, 1)$ si es
+  cerrado bajo las operaciones $\SU$, $\IN$ y $^{c}$, es decir, $x \ \SU \ y, x \ \IN \ y, x^{c} \in S$. Es fácil notar
+  si $S$ es subuniverso de $(L, \SU, \IN, , ^{c}, 0, 1)$ entonces $(S, \SU\mathrm{\mid}_{S \times S}, \IN\mathrm{\mid}_{
+  S \times S}, , ^{c}\mathrm{\mid}_{S}, 0, 1)$ es \textbf{subreticulado} de $(L, \SU, \IN, ^{c}, 0, 1)$.
 
   \vspace{3mm}
   \PN \textbf{HOMOMORFISMO E ISOMORFISMO DE RETICULADOS COMPLEMENTADOS:} Sean $(L, \SU, \IN, ^{c}, 0, 1)$ y
@@ -45,8 +54,9 @@
   \end{itemize}
 
   \vspace{3mm}
-  \PN \textbf{CONGRUENCIAS DE RETICULADOS COMPLEMENTADO:} Sea $(L, \SU, \IN, 0, 1)$ un reticulado, una \textbf{congruencia}
-  sobre $(L, \SU, \IN, 0, 1)$ será una \textbf{relación de equivalencia} $\theta$ la cual cumpla:
+  \PN \textbf{CONGRUENCIAS DE RETICULADOS COMPLEMENTADO:} Sea $(L, \SU, \IN, ^{c}, 0, 1)$ un reticulado, una
+  \textbf{congruencia} sobre $(L, \SU, \IN, ^{c}, 0, 1)$ será una \textbf{relación de equivalencia} $\theta$ la cual
+  cumpla:
   \begin{enumerate}
     \item $x \theta x^{\prime} \text{ y } y \theta y^{\prime} \Rightarrow (x \ \SU \ y) \theta (x^{\prime} \ \SU \
       y^{\prime}) \text{ y } (x \ \IN \ y) \theta (x^{\prime} \ \IN \ y^{\prime})$

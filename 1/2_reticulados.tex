@@ -26,10 +26,17 @@
   \end{enumerate}
 
   \vspace{3mm}
-  \PN \textbf{SUBRETICULADO:} Sea $(L, \SU, \IN)$ un reticulado. $S \neq \emptyset \subseteq L$ será
-  llamado \textbf{subuniverso} de $(L, \SU, \IN)$ si es cerrado bajo las operaciones $\SU$ e $\IN$. Diremos que el
-  reticulado $(S, \SU\mathrm{\mid}_{S \times S}, \IN\mathrm{\mid}_{S \times S})$ es \textbf{subreticulado} de
-  $(L, \SU, \IN)$.
+  \PN \textbf{SUBRETICULADO:} Dado $(L, \SU, \IN)$ reticulado, diremos que $(L^{\prime}, \SU^{\prime}, \IN^{\prime})$ es
+  \textbf{subreticulado} de $(L, \SU, \IN)$ si:
+  \begin{itemize}
+    \item $L \subseteq L^{\prime}$
+    \item $\SU = \SU^{\prime}\mathrm{\mid}_{L \times L}$ y $\IN = \IN^{\prime}\mathrm{\mid}_{L \times L}$
+  \end{itemize}.
+
+  \PN Un conjunto $\emptyset \neq S \subseteq L$ será llamado \textbf{subuniverso} de $(L, \SU, \IN)$ si es cerrado bajo
+  las operaciones $\SU$ e $\IN$, es decir, $x \ \SU \ y, x \ \IN \ y \in S$. Es fácil notar si $S$ es subuniverso de
+  $(L, \SU, \IN)$ entonces $(S, \SU\mathrm{\mid}_{S \times S}, \IN\mathrm{\mid}_{S \times S})$ es \textbf{subreticulado}
+  de $(L, \SU, \IN)$.
 
   \vspace{3mm}
   \PN \textbf{HOMOMORFISMO E ISOMORFISMO DE RETICULADOS:} Sean $(L, \SU, \IN)$ y $(L^{\prime}, \SU^{\prime},
@@ -65,12 +72,11 @@
   \]
 
   \vspace{3mm}
-  \PN \textbf{KERNEL:} Dada una función $F: A \rightarrow B$, llamaremos núcleo de $F$ a la relación binaria:
+  \PN \textbf{KERNEL:} Dada una función $F: A \rightarrow B$, llamaremos núcleo de $F$ a la relación de equivalencia
+  binaria:
   \[
-    \{(a,b) \in A^{2}: F(a) = F(b)\}
+    \ker F = \{(a,b) \in A^{2}: F(a) = F(b)\}
   \]
-
-  \PN \textbf{Notación:} $\ker F$.
 
   \vspace{3mm}
   \PN \textbf{PROYECCIÓN CANÓNICA:} Si $R$ es una \textbf{relación de equivalencia} sobre un conjunto $A$, definimos la
